@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Project-3/static/css/main.6a489e9d.css",
-    "main.js": "/Project-3/static/js/main.9b3ce51b.js",
+    "main.js": "/Project-3/static/js/main.db1ba88b.js",
     "static/js/787.87c6d22c.chunk.js": "/Project-3/static/js/787.87c6d22c.chunk.js",
     "static/media/infinity-wars-trailer.mp4": "/Project-3/static/media/infinity-wars-trailer.bb4072c1faf7f501cf89.mp4",
     "static/media/ezgif-5-d35be36e62.jpg": "/Project-3/static/media/ezgif-5-d35be36e62.7a1630f2efca71931dab.jpg",
@@ -31,11 +31,11 @@
     "static/media/maw_hero_shot.jpg": "/Project-3/static/media/maw_hero_shot.8c7d69f6c4ebd0f71f05.jpg",
     "index.html": "/Project-3/index.html",
     "main.6a489e9d.css.map": "/Project-3/static/css/main.6a489e9d.css.map",
-    "main.9b3ce51b.js.map": "/Project-3/static/js/main.9b3ce51b.js.map",
+    "main.db1ba88b.js.map": "/Project-3/static/js/main.db1ba88b.js.map",
     "787.87c6d22c.chunk.js.map": "/Project-3/static/js/787.87c6d22c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a489e9d.css",
-    "static/js/main.9b3ce51b.js"
+    "static/js/main.db1ba88b.js"
   ]
 }
