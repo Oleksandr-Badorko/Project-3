@@ -20,11 +20,11 @@ function App() {
       <DarkModeToggle></DarkModeToggle>
       <Routes>
         <Route path="/" element={<WatchSection />} />
-        <Route path="/about" element={<AboutSection />} />
-        <Route path="/featured" element={<NewsSection />} />
-        <Route path="/team" element={<TeamSection />} />
-        <Route path="/search" element={<SearchSection />} />
-        <Route path="/contact" element={<ContactSection />} />
+        <Route path="about" element={<AboutSection />} />
+        <Route path="featured" element={<NewsSection />} />
+        <Route path="team" element={<TeamSection />} />
+        <Route path="search" element={<SearchSection />} />
+        <Route path="contact" element={<ContactSection />} />
       </Routes>
     </Router>
   );
