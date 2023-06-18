@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Head from "./Head";
 import Sidebar from "./components/Sidebar/Sidebar";
 import DarkModeToggle from "./components/DarkModeToggle/DarkModeToggle";
