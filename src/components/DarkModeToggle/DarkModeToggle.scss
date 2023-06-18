@@ -1,0 +1,48 @@
+.light-mode {
+    position: absolute;
+    position: fixed;
+    top: 90%;
+    left: 0%;
+    transform: translate(10%);
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background: white;
+    color: black;
+    transition: 2s;
+  }
+  
+  .bi-brightness-high-fill i {
+    font-size: 24px;
+    cursor: pointer;
+    width: 240px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  
+  .dark-mode {
+    background: #151515;
+    color: white;
+    transition: 2s;
+  }
+
+  .light-mode {
+    &.dark {
+      background: #151515;
+      color: white;
+      transition: 2s;
+    }
+  
+    &.light {
+      background: white;
+      color: black;
+      transition: 2s;
+    }
+  }

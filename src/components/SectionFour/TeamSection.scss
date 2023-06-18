@@ -1,0 +1,245 @@
+.animated-container {
+	font-family: "Poppins", sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	
+	background-color: #151515;
+	.team-title {
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 40px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		white-space: nowrap;
+		color: white;
+		padding: 0 14%;
+		position: relative;
+		.title-span {
+			color: #c50000;
+		}
+	}
+	.team-title:before {
+		background-color: #c50000;
+		content: "";
+		display: block;
+		height: 3px;
+		width: 380px;
+		margin-bottom: 5px;
+	}
+	.team-title:after {
+		background-color: #c50000;
+		content: "";
+		display: block;
+		height: 3px;
+		width: 380px;
+		margin-bottom: 0.25em;
+	}
+}
+
+.animated-cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.animated {
+		position: relative;
+		align-self: flex-start;
+		margin: 50px;
+		box-shadow: 5px 5px 20px black;
+		overflow: hidden;
+		.animated__img {
+			max-height: 500px;
+			max-width: 400px;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	button {
+		display: inline-block;
+		margin-top: 20px;
+		padding: 13px 40px;
+		background: #fff;
+		color: #000;
+		font-weight: 600;
+		border: 2px solid #fff;
+		text-decoration: none;
+		transition: 0.5s ease-in-out;
+	}
+	button:hover {
+		background: transparent;
+		color: #fff;
+		transform: translateX(8px);
+	}
+}
+
+.intro {
+	height: 70px;
+	width: 400px;
+	padding: 6px;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0px;
+	background: rgb(27, 27, 27, 0.5);
+	color: white;
+	&::-webkit-scrollbar {
+		width: 6px;
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb,
+	&::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
+	&__title {
+		margin: 0 0 0 10px;
+		font-size: 40px;
+	}
+	&__text {
+		font-size: 20px;
+		margin: 5px 20px 20px 5px;
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+span {
+	font-weight: bold;
+}
+
+.animated:hover {
+	cursor: pointer;
+}
+
+.animated:hover .intro {
+	height: 250px;
+	bottom: 0px;
+	background: rgb(27, 27, 27, 0.5);
+}
+
+.animated:hover .intro__text {
+	opacity: 1;
+	visibility: visible;
+}
+
+.animated:hover {
+	transform: scale(1.1) rotate(-5deg);
+}
+
+@media (max-width: 1400px) {
+	.animated-container {
+		position: relative;
+		padding-top: 50px;
+	}
+	.animated-cards {
+		display: flex;
+		flex-direction: column;
+		.animated {
+			align-self: center;
+			margin: 25px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.animated-cards .animated .animated__img {
+		max-height: 400px;
+		max-width: 300px;
+	}
+
+	.intro {
+		height: 50px;
+		width: 300px;
+		padding: 0;
+	}
+
+	.animated-cards .animated {
+		margin: 25px;
+	}
+}
+
+@media (max-width: 480px) {
+	.animated-container .team-title {
+		font-size: 1.3rem;
+		&:before {
+			width: 275px;
+		}
+		&:after {
+			width: 275px;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.animated-cards .animated .animated__img {
+		max-height: 350px;
+		max-width: 250px;
+	}
+
+	.intro {
+		height: 50px;
+		width: 250px;
+		padding: 0;
+	}
+}
+
+@media (max-width: 400px) {
+	.animated-cards .animated .animated__img {
+		max-height: 340px;
+		max-width: 220px;
+	}
+
+	.intro {
+		height: 40px;
+		width: 220px;
+		padding: 0;
+		&__title {
+			font-size: 30px;
+		}
+		&__text {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 352px) {
+	.animated-container {
+		padding-top: 0;
+	}
+	.animated-container .team-title {
+		font-size: 16px;
+		&:before {
+			width: 245px;
+		}
+		&:after {
+			width: 245px;
+		}
+	}
+	.animated-cards .animated .animated__img {
+		max-height: 340px;
+		max-width: 180px;
+	}
+
+	.animated:hover .intro {
+		height: 220px;
+		bottom: 0px;
+		background: rgb(27, 27, 27, 0.5);
+	}
+
+	.intro {
+		height: 40px;
+		width: 180px;
+		padding: 0;
+		&__title {
+			font-size: 24px;
+			padding-top: 10px;
+		}
+		&__text {
+			font-size: 15px;
+		}
+	}
+}

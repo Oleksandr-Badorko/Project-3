@@ -1,0 +1,23 @@
+.footer {
+    text-align: center;
+    background: #222;
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        a {
+            font-size: 1.5rem;
+            color: #ccc;
+            padding: 2rem;
+            text-transform: capitalize;
+        }
+        a:hover {
+            transform: translateY(-5px);
+            color: #eee;
+            text-decoration: underline;
+            color: #c50000;
+        }
+    }
+}

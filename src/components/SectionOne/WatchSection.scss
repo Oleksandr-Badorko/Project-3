@@ -1,0 +1,173 @@
+// SECTION 1 WITH VIDEO
+.watch-section {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fe0000;
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+// MARVEL IMG IN THE HEADER
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    .logo {
+        max-width: 150px;
+    }
+}
+
+// CONTENT TEXT
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    .textBox {
+        max-width: 700px;
+        &__title {
+            font-size: 30px;
+            line-height: 1.5;
+            font-weight: 600;
+            line-height: 100px;
+            span {
+                text-transform: uppercase;
+                font-size: 60px;
+                font-weight: 900;
+            }
+        }
+        &__paragraph {
+            font-size: 17px;
+            word-spacing: 5px;
+            line-height: 25px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 13px 40px;
+            background: #fff;
+            color: #000;
+            font-weight: 600;
+            border: 2px solid #fff;
+            text-decoration: none;
+            transition: 0.5s ease-in-out;
+        }
+        a:hover {
+            background: transparent;
+            color: #fff;
+            transform: translateX(8px);
+        }
+    }
+}
+
+.bx {
+    display: none;
+}
+
+// Responsive Page
+@media(max-width: 992px) {
+	.header {
+		padding: 20px;
+	}
+	.header .logo {
+		max-width: 150px;
+		position: absolute;
+		left: 20%;
+	}
+	video {
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+	.content {
+		flex-direction: column;
+		margin-top: 100px;
+	}
+	.content .textBox {
+		max-width: 100%;
+	}
+	.content .textBox h2 {
+		font-size: 2em;
+		line-height: 50px;
+	}
+}
+
+@media(max-width: 576px) {
+	.watch-section {
+		padding: 0 18%;
+	}
+}
+
+@media (max-width: 450px) {
+	.content .textBox a {
+		padding: 10px 35px;
+	}
+}
+
+@media (max-width: 435px) {
+	.content .textBox a {
+		padding: 5px 15px;
+	}
+}
+
+@media (max-width: 400px) {
+	.watch-section {
+		padding: 0 22%;
+	}
+	.content .textBox__title span{
+		font-size: 40px;
+		
+	}
+	.content .textBox h2 {
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 376px) {
+	.content .textBox__paragraph {
+		font-size: 14px;
+	}
+	.content .textBox h2  {
+		line-height: 50px;
+	}
+}
+
+@media (max-width: 340px) {
+	.content .textBox__title span {
+		font-size: 30px;
+		line-height: 10px;
+		font-weight: 600;
+		line-height: 50px;
+		span {
+			font-size: 50px;
+		}
+	}
+	.content .textBox h2 {
+		line-height: 30px;
+	}
+}
+
+@media (max-width: 328px) {
+	.content .textBox__paragraph {
+		font-size: 12px;
+	}
+}

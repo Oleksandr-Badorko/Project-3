@@ -1,0 +1,169 @@
+.about {
+  padding: 20px 14%;
+  font-family: "Poppins";
+  min-height: 100vh;
+  background-color: #151515;
+  &-container {
+    display: flex;
+    gap: 50px;
+  }
+  &__img {
+    max-width: 546px;
+    height: auto;
+    width: 100%;
+  }
+
+  &__text {
+    line-height: 1;
+    width: 100%;
+    max-width: 700px;
+
+    &-title {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      width: 160px;
+      text-align: center;
+      margin: auto;
+      white-space: nowrap;
+      color: white;
+      padding-bottom: 20px;
+      position: relative;
+      .title-span {
+        color: #ff1a1a;
+      }
+    }
+    &-title:before {
+      background-color: #c50000;
+      content: "";
+      display: block;
+      height: 3px;
+      width: 150px;
+      margin-bottom: 5px;
+    }
+    &-title:after {
+      background-color: #c50000;
+      content: "";
+      display: block;
+      height: 3px;
+      width: 150px;
+      margin-bottom: 0.25em;
+    }
+    &-paragraph {
+      color: white;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 1.7;
+      background-color: #001f3f;
+      border: 1px solid white;
+      padding: 20px;
+    }
+  }
+}
+
+.about__more {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  margin-top: 100px;
+  .about__more-img {
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+  }
+  .about__more-text {
+    width: 100%;
+    max-width: 40%;
+    height: 100%;
+    max-height: 400px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.7;
+    background-color: #001f3f;
+    border: 1px solid white;
+    padding: 20px;
+    overflow: auto;
+  }
+}
+
+/* Hide the scrollbar */
+.about__more-text::-webkit-scrollbar {
+  width: 0.5em; 
+}
+
+.about__more-text::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+.about__more-text::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
+
+.about__more-text::-webkit-scrollbar-thumb:hover {
+  background-color: transparent; 
+}
+
+@media (max-width: 1371px) {
+  .about__more {
+    gap: 50px;
+  }
+}
+
+// RESPONSIVE PAGE
+@media (max-width: 1000px) {
+  .about__text-paragraph {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .about__more .about__more-text {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 850px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about__more {
+    flex-direction: column-reverse;
+    .about__more-text {
+      max-width: 100%;
+    }
+  }
+
+  .about__text-paragraph {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-media: 576px) {
+  .about-container {
+    padding: 0 6%;
+  }
+}
+
+@media (max-width: 515px) {
+  .about__more p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-container {
+    padding: 0 10%;
+  }
+}
+
+@media (max-media: 320px) {
+  .about-container {
+    padding: 0 12%;
+  }
+}

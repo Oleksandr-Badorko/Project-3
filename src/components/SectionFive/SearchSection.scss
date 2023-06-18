@@ -1,0 +1,219 @@
+.search {
+    background-color: #151515;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3em 2em;
+    top: 1em;
+
+    &__content {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .hero-bg {
+        background-image: url(../../images/search-bg/0exuprkk5cwj6ail.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 100px;
+    }
+    &__input {
+        padding: 0 9%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 20px;
+        }
+
+        input {
+            padding: 1em 0.5em;
+            background-color: #3a3939;
+            color: #ffffff;
+            border: none;
+            border-radius: 0.5em;
+            outline: none;
+            display: flex;
+            align-self: flex-end;
+            position: relative;
+        }
+        button {
+            outline: none;
+            border: none;
+            background-color: #e01a38;
+            color: #ffffff;
+            padding: 1em 2em;
+            border-radius: 0.5em;
+            display: flex;
+            align-self: flex-end;
+            text-transform: uppercase;
+        }
+        button:hover {
+            transform: translateX(8px);
+        }
+    }
+}
+
+.display-container {
+    padding: 1em 9%;
+}
+
+.card-container {
+    .container-character-image {
+        background-color: #ffffff;
+        padding: 0.5em;
+        height: 20.37em;
+        width: 20.37em;
+        display: block;
+        margin: auto;
+
+        img {
+            width: 100%;
+            position: relative;
+        }
+    }
+    .character-name {
+        padding: 1.5em 0 0.8em 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .character-description {
+        text-align: justify;
+        line-height: 2em;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+}
+
+.list {
+    width: 10%;
+    position: absolute;
+    right: 16%;
+    // color: #ffffff;
+    z-index: 1;
+}
+.autocomplete-items {
+    padding: 0.5em;
+}
+.autocomplete-items:hover {
+    background-color: #ddd;
+    color: #171821;
+}
+
+.character-comics {
+    text-align: justify;
+    line-height: 2em;
+    font-weight: 300;
+}
+
+.character-comics-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: auto;
+    margin-top: 50px;
+}
+
+.comic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.comic-image {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 250px;
+}
+
+.comic-title {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+@media (max-width: 1632px) {
+    .list {
+        display: none;
+    }
+}
+
+@media (max-width: 795px) {
+    .search__input {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .character-comics-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        grid-auto-rows: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 622px) {
+    .card-container .container-character-image {
+        height: 15.37em;
+        width: 15.37em;
+    }
+    .search__input {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .character-comics-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        grid-auto-rows: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-container .character-description {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 550px) {
+    .character-comics-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        grid-auto-rows: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 465px) {
+    .card-container .container-character-image {
+        height: 10.37em;
+        width: 10.37em;
+    }
+
+@media (max-width: 400px) {
+    .display-container {
+        padding: 0;
+        padding-top: 10px;
+    }
+}
+
+    .card-container .character-description {
+        font-size: 1em;
+    }
+}
