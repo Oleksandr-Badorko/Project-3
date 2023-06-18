@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Head from "./Head";
 import Sidebar from "./components/Sidebar/Sidebar";
 import DarkModeToggle from "./components/DarkModeToggle/DarkModeToggle";
@@ -20,11 +20,11 @@ function App() {
       <DarkModeToggle></DarkModeToggle>
       <Routes>
         <Route path="/" element={<WatchSection />} />
-        <Route path="/about" element={<AboutSection />} />
-        <Route path="/featured" element={<NewsSection />} />
-        <Route path="/team" element={<TeamSection />} />
-        <Route path="/search" element={<SearchSection />} />
-        <Route path="/contact" element={<ContactSection />} />
+        <Route path="about" element={<AboutSection />} />
+        <Route path="featured" element={<NewsSection />} />
+        <Route path="team" element={<TeamSection />} />
+        <Route path="search" element={<SearchSection />} />
+        <Route path="contact" element={<ContactSection />} />
       </Routes>
     </Router>
   );
